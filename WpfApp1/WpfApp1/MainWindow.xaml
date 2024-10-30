@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="LightSteelBlue">
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="*" >
+            </ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Image Source="/pexels-plasticlines-17787815.jpg" Stretch="Fill"></Image>
+        <Label Height="29" Width="62" Margin="237,197,500,204" Content="Username">
+        </Label>
+        <Label Content="Wlcome" FontSize="100" Margin="16,53,394,217"/>
+
+        <Label Height="29" Width="60" Content="Password" Margin="237,236,500,169" />
+        <TextBox x:Name="txt_user"  Height="30" Width="170"  Margin="1 ,197, 1,204" />
+        <TextBox  Height="30" Width="170" Name="pass" Margin="1,235,0,171" TextChanged="pass_TextChanged" />
+        <Button Height="30" Width="90" Content="Log in"  Name="txt" Click="Button_Click" Margin="665,394,45,10" ></Button>
+
+
+
+
+    </Grid>
+
+
+</Window>
